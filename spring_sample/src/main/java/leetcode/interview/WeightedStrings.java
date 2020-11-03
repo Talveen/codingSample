@@ -56,7 +56,7 @@ public class WeightedStrings {
         int k = sc.nextInt();
         StringBuffer sb = new StringBuffer();
         StringBuffer res = formedString(sb, k);
-        System.out.println(res);
+        System.out.println(res); 
 
     }
 }
