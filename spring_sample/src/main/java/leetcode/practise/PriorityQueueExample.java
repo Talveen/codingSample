@@ -7,6 +7,7 @@ package leetcode.practise;
     Complexity: 
 */
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -20,7 +21,10 @@ public class PriorityQueueExample {
     }
 
     private int solve(int[] nums, int k) {
+        //Min heap
         PriorityQueue<Integer> q = new PriorityQueue<>();
+        //Max heap
+        PriorityQueue<Integer> q1 = new PriorityQueue<>(Collections.reverseOrder());
         for(int n:nums){
             q.add(n);
             if(q.size()>k){

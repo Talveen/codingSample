@@ -14,7 +14,7 @@ public class RomanIntegers{
     public static void main(String[] args){
         RomanIntegers rmn = new RomanIntegers();
         String val = "MCMXCIV";
-        System.out.println(rmn.intToRoman(val));
+        System.out.println(rmn.romanToInt(val));
     }
 
     static Map<String, Integer> values = new HashMap<String, Integer>();
@@ -29,7 +29,7 @@ public class RomanIntegers{
         values.put("I", 1);
     }
 
-    public int intToRoman(String s) {
+    public int romanToInt(String s) {
          int sum = 0;
             int i = 0;
             while (i < s.length()) {
