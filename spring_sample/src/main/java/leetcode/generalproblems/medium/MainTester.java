@@ -7,12 +7,14 @@ package leetcode.generalproblems.medium;
     Complexity: 
 */
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class MainTester {
     public static void main(String[] args){
 
-        //ZigZagTester
+       /* //ZigZagTester
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the String: ");
         String s = "PAYPALISHIRING"; //scanner.next();
@@ -21,7 +23,7 @@ public class MainTester {
         ZigZagConversion zigZagConversion = new ZigZagConversion();
         String result = zigZagConversion.convert(s,rows);
         System.out.println(result);
-
+*/
       /* int l= 14, n=3;
         int fullV = l/(n+(n-2));
         int remaining = l%(n+(n-2));
@@ -31,5 +33,7 @@ public class MainTester {
         int finalrow = fullV + fullCol+fullColMod/n+singlerows;
         System.out.println(finalrow);
         System.out.println(Integer.MAX_VALUE);*/
+        Map<Integer, Integer> map = new HashMap<>(3);
+        System.out.println(map.size());
     }
 }
