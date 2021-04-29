@@ -1,4 +1,4 @@
-package leetcode;/*
+package leetcode.interview.serviceNow;/*
     Created By: Talveen Rakhra
     Created On: 28-04-2021
     Question URL:

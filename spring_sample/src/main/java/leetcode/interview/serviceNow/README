@@ -1,0 +1,11 @@
+Interview held on: 28-APR-2021 10-11pm
+Interviewer: Felipe Faraco
+
+Q1: Compress String. Given string "aaabbccab" return "a3b2c2a1b1"
+A1: CompressString
+
+@2: 3 sum from leetcode https://leetcode.com/problems/3sum/
+A2: CheckSum
+
+@3: Above question was changed to find distinct number from 3 different array amounting to sum of 0
+A3: CheckSumArray
