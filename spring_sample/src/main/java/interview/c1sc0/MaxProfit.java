@@ -1,4 +1,4 @@
-package practise;/*
+package interview.c1sc0;/*
     Created By: Talveen Rakhra
     Created On: 23-09-2021
     Question URL:
@@ -16,8 +16,8 @@ public class MaxProfit {
         MaxProfit maxProfit = new MaxProfit();
         List<Integer> nums = new ArrayList<Integer>();
         nums.addAll(Arrays.asList(71, 45, 55, 70, 67, 43));
-        //maxProfit.solveSingle(nums);
-        maxProfit.test();
+        maxProfit.solveSingle(nums);
+        //maxProfit.test();
     }
 
     private void solve(List<Integer> nums) {
@@ -37,15 +37,16 @@ public class MaxProfit {
     }
 
     private void solveSingle(List<Integer> nums) {
-        int max=0, min=nums.get(0);
-        int buy=0, sell=0;
-        for(int i = 1; i<nums.size(); i++){
-            if(min<nums.get(i)){
-                min=nums.get(i);
-                max=Math.max(max,nums.get(i)-min);
+        Integer min = nums.get(0);
+        Integer maxP = 0;
+        for(int i = 1; i<nums.size();i++){
+            if (nums.get(i) < min) {
+                min = nums.get(i);
+            } else if (nums.get(i) - min > maxP) {
+                maxP = nums.get(i) - min;
             }
         }
-        System.out.println(max);
+        System.out.println(maxP);
     }
 
     private void test(){

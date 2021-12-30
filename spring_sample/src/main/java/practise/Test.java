@@ -7,9 +7,16 @@ package practise;/*
 
 interface BaseI{
     default void method(){
-        System.out.println("test");
+        System.out.println("test I");
     }
 }
+
+interface BaseJ{
+    default void method(){
+        System.out.println("test J");
+    }
+}
+
 class BaseC{
     public void method(){
         System.out.println("BaseC");
@@ -17,7 +24,7 @@ class BaseC{
 }
 
 
-public class Test extends BaseC implements BaseI{
+public class Test implements BaseI{
     public static void main(String[] args) {
         (new Test()).method();
         }
