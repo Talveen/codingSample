@@ -1,4 +1,4 @@
-package codechef.starter.Apr2021;/*
+package codechef.starter;/*
     Created By: Talveen Rakhra
     Created On: 03-05-2021
     Question URL:

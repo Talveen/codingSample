@@ -8,7 +8,7 @@ package leetcode.interview.serviceNow;/*
 
 import java.util.*;
 
-public class CheckSumArray {
+public class  CheckSumArray {
 
     public static void main(String[] args) {
         CheckSumArray cs = new CheckSumArray();
